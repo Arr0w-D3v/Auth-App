@@ -25,8 +25,9 @@ export const AuthProvider = ({ children }) => {
                             text: 'OK', onPress: () => [console.log('OK Pressed'),
                             setIsLoading(false),
                             setUserToken(response.data.data.token),
-                            asyncStorage.setItem('userToken', response.data.data.token)
+                                asyncStorage.setItem('userToken' , response.data.data.token),
                             ]
+
                         },
                     ]
                     );
