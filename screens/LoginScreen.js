@@ -7,7 +7,8 @@ import { AuthContext } from '../context/AuthContext';
 export default function LoginScreen() {
 
     const {login } = React.useContext(AuthContext);
-
+    //michael.pollet@wizz-art.be
+    //Wizz@2020
     const [credentials, setCredentials] = React.useState({
         email: '',
         password: '',

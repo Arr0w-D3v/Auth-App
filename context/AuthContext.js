@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
         console.log('credentials', credentials);
         setIsLoading(true);
         await apiLogin.get('/sanctum/csrf-cookie');
-        await apiLogin.post('https://wib.preprod.wizz-art.be/api/login', {
+        await apiLogin.post('/api/login', {
             email: credentials.email,
             password: credentials.password,
         })

@@ -79,7 +79,16 @@ export default function App() {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name='Login' component={LoginScreen} />
+        <Tab.Screen name='Login' component={LoginScreen}
+          options={{
+            title: 'To Do List',
+            //headerShown: false,
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+          }}
+        
+        />
         <Tab.Screen name="Sign In" component={SignInScreen} />
       </Tab.Navigator>
     );
